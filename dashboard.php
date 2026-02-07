@@ -14,9 +14,13 @@ $is_admin = ($username === 'admin');
 // This is made by Magiczny_Jasiek, and only he can sell it. If you bought it from other vacban.wtf listing that was not this one: https://vacban.wtf/vacshop/78615/ then be careful using it. It is not official.
 ?>
 
+php
+
+<?php
+session_start();
+// logika
 <!DOCTYPE html>
-<html lang="pl">
-<head>
+    <html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>demObywatel | Dashboard </title>
