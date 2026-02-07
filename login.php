@@ -6,7 +6,9 @@ $users = array(
     // Info o autorze itd.
 ); 
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if (!isset($_SESSION['loggedin'])) {
+    header("Location: login.php");
+    exit;
     $username = $_POST['username'];
     $password = $_POST['password'];
 
