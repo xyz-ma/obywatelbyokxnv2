@@ -17,8 +17,8 @@ if (!isset($_SESSION['loggedin'])) {
         $_SESSION['username'] = $username;
         header("Location: dashboard.php");
         exit;
-    } else {
-        echo "Invalid auth key.";
+    echo "LOGGEDIN";
+        exit;
     }
 }
 ?>
